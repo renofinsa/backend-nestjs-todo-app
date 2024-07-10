@@ -31,6 +31,9 @@ export class TodosService {
       return await this.prisma.todos.findMany({
         where: {
           deletedAt: null
+        },
+        orderBy: {
+          id: 'desc'
         }
       });
     } catch (error) {
