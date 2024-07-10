@@ -1,0 +1,47 @@
+### Add new todos
+POST http://localhost:3000/todos
+content-type: application/json
+
+{
+    "title": "12345",
+    "description": "ok"
+}
+
+### Get all todos
+GET http://localhost:3000/todos
+content-type: application/json
+
+{}
+
+### Get todos byId
+GET http://localhost:3000/todos/7
+content-type: application/json
+
+{}
+
+### Update todos byId
+PATCH http://localhost:3000/todos/7
+content-type: application/json
+
+{
+    "title": "update title",
+    "description": "lorem ipsum lorem ipsum"
+}
+
+### Change status todos byId
+PATCH http://localhost:3000/todos/change-status/7
+content-type: application/json
+
+{}
+
+### Delete todos byId
+DELETE http://localhost:3000/todos/7
+content-type: application/json
+
+{}
+
+### Delete bulk todos byId
+DELETE http://localhost:3000/todos?ids=10
+content-type: application/json
+
+{}
