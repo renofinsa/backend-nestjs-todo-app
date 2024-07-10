@@ -5,7 +5,7 @@
 
 ## Installation
 - npm install
-- touch /prisma/dev.db
+- touch prisma/dev.db
 - cp .env.example .env
 - npm run migrate:run
 - npm run start:dev
